@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    padding: 0px;
+    margin: 0px;
+}
+
+.header{
+    height: 125px;
+    width: 100%;
+    display: flex;
+    background-color: lightcoral;
+}
+
+.header h2{
+
+    margin: 50px 50px 50px 400px;
+    font-size: 42px;
+}
+
+.start{
+    
+    height: 50px;
+    width: 50px;
+    margin: 50px;
+    background-color: lightsteelblue;
+
+}
+
+.start:hover{
+
+    background-color: cornflowerblue;
+}
+
+
+.cardtimer{
+
+    width: 50px;
+    display: flex;
+    margin-left: 250px;
+    
+}
+
+.cardtimer h3{
+
+    padding: 10px;
+
+}
+.timertext{
+
+    padding: 13px;
+    margin-left: 5px;
+
+}
+
+
+.Quiz{
+
+    display: flex;
+    margin-left: 200px;
+    font-size: 26px;
+}
+
+.selection {
+
+    display: block;
+    margin-left: 250px;
+    font-size: 18px;
+}
