@@ -1,9 +1,9 @@
 // Selects elements
 var timeEl = document.querySelector(".timertext");
-var mainEl = document.getElementsByTagName("main");
-var startButton = document.querySelector(".start")
+var mainEl = document.querySelector("main");
+var startButton = document.querySelector(".start");
 
-var secondsLeft = 15;
+var secondsLeft = 5;
 
 function setTime(){
     // Sets interval in variable
@@ -17,17 +17,18 @@ function setTime(){
             // call function
             endgame();
         }
-    }, 1500);
+    }, 500);
 }
 
 // Function to show game over text, player's initals and score
 function endgame() {
-    timeEl.textContent = " ";
-    var textE1 = document.createElement("h2");
-    textE1.value = "Game is over.";
+    timeEl.textContent = "0";
+    mainEl.innerHTML = "";
+    var textE1 = document.createElement("h1");
+    textE1.textContent = "Game is over.";
     mainEl.appendChild(textE1);
-  
+
   }
   
-
+// Attach event listener to start button to call setTime function on click
 startButton.addEventListener("click", setTime);
