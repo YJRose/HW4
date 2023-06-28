@@ -24,6 +24,7 @@
     width: 50px;
     margin: 50px;
     background-color: lightsteelblue;
+    border-color: lightgrey;
 
 }
 
@@ -58,12 +59,23 @@
 
     display: flex;
     margin-left: 200px;
+    margin-bottom: 15px;
     font-size: 26px;
 }
 
-.selection {
-
-    display: block;
+.button1, .button2, .button3{
+    
     margin-left: 250px;
-    font-size: 18px;
+    margin-bottom: 5px;
+    font-size: 20px;
+
+    
+
+}
+
+button{
+    
+    background-color: aqua;
+    border-radius: 5px;
+    border-color: aqua;
 }
