@@ -30,7 +30,7 @@ The following animation demonstrates the application functionality:
 
 ![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
 
-## Deployed link: 
+## Deployed link: https://yjrose.github.io/HW4/
 
 ---
 © 2023 YJLin Bootcamp Challenge accepted! 👓
