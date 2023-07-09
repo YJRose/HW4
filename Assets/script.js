@@ -3,9 +3,7 @@ var timeEl = document.querySelector(".timertext");
 var mainEl = document.querySelector("main");
 var startButton = document.querySelector(".start");
 var question = document.querySelector(".Quiz");
-var Button1 = document.querySelector(".button1");
-var Button2 = document.querySelector(".button2");
-var Button3 = document.querySelector(".button3");
+//var selection = document.querySelector(".selection");
 
 
 var correctanswer = 0;
@@ -16,6 +14,7 @@ var incorrectanswer = 0;
 var secondsLeft = 5;
 
 function setTime(){
+
     // Sets interval in variable
     var timerInterval = setInterval(function(){
         secondsLeft --;
@@ -28,6 +27,7 @@ function setTime(){
             endgame();
         }
     }, 500);
+    Q1();
 }
 
 //after click correct answer, go to next question
@@ -63,6 +63,22 @@ function endgame() {
 
   }
   
+
+function Q1(){
+
+    question.replaceChildren("Q1 : what selection is NOT primitive types of data in JavaScript?");
+    var Button1 = document.createElement("button");
+    Button1.innerHTML = "String";
+    document.querySelector(".selection1").appendChild(Button1);
+    var Button2 = document.createElement("button");
+    Button2.innerHTML = "Array";
+    document.querySelector(".selection2").appendChild(Button2);
+    var Button3 = document.createElement("button");
+    Button3.innerHTML = "Number";
+    document.querySelector(".selection3").appendChild(Button3);
+
+}
+
 // Attach event listener to start button to call setTime function on click
 startButton.addEventListener("click", setTime);
 Button2.addEventListener("click", correct);
@@ -73,8 +89,7 @@ function Q2(){
 
     question.replaceChildren("Q2 : What is the programming language for the Web?");
     Button1.replaceChildren("JavaScript");
-    Button2.replaceChildren("LavaScript");
-    Button3.replaceChildren("GavaScript");
+    Button2.replaceChildren("LavaScript");    Button3.replaceChildren("GavaScript");
     document.querySelector("main p").remove();
     Button2.addEventListener("click", incorrect);
     Button1.addEventListener("click", correct);

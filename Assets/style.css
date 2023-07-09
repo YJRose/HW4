@@ -57,25 +57,19 @@
 
 .Quiz{
 
-    display: flex;
     margin-left: 200px;
     margin-bottom: 15px;
     font-size: 26px;
 }
 
-.button1, .button2, .button3{
+.selection1, .selection2, .selection3 {
     
+    display: flex;
+    justify-content: left;
     margin-left: 250px;
     margin-bottom: 5px;
     font-size: 20px;
 
-    
 
 }
 
-button{
-    
-    background-color: aqua;
-    border-radius: 5px;
-    border-color: aqua;
-}
